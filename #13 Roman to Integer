@@ -1,0 +1,21 @@
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        roman_map = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+        sum = 0
+        previous = 0
+        for i in range(len(s)):
+            current = roman_map[s[i]]
+            if i > 0 and current > previous:
+                sum -= 2 * previous
+            sum += current
+            previous = current
+        return sum
+
+# We need to count each numeral in the string, and we must pay attention to the following character to determine whether we need to subtract. Example: IX = 9 or XL = 40. 
+# If character is I and next character is V or X, then subtract 1. 
+# If character is X and next character is L or C, then subtract 10.
+# If character is AC and next character is D or M, subtract 100.
+# Create cases to match for numeral in s, then assign a current value to that numeral.
+# The next if/else logic will check if the current value is greater than the previous value (which it normally shouldn’t be). 
+# If that’s the case, it’ll add the current value and subtract the previous value twice (once for being added before, and another to get it down to the correct value.
+# Assign the previous variable as the current value for the next cases.
