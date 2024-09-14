@@ -1,0 +1,20 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        negative = x < 0
+        x = abs(x)
+        y = x
+        reverse = 0
+        while x:
+            reverse = 10*reverse + x%10
+            x = x/10
+        if not negative:
+            return reverse == y
+        else:
+            return False
+
+# Using <string> and <algorithm>, I converted the int to a string s, then copied that string into a string r.
+# Reversed string r and then compared it to s, returning true or false if the string is a true palindrome.
