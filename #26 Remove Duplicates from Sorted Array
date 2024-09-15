@@ -1,0 +1,16 @@
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        j = 1
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i - 1]:
+                nums[j] = nums[i]
+                j += 1
+        return j
+
+# Go through the array with two variables, i and j. The variable i will keep track of the current place in the array, while comparing that value with i-1 to track any unique element. 
+# j will update the array in place with the unique elements, starting at position 1 and not 0 since position 0 is always a unique element.
+# If the loop encounters a unique element, that value is added into the array at position j. 
+#	j is then increased so that future unique elements can be added.
+#	The function returns j because the problem asks for the number of unique elements, along with the returned array that does not include duplicates.
