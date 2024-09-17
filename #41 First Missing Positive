@@ -1,0 +1,15 @@
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+        n = len(nums)
+
+        # Step 1: Place Each Number in its Ideal Position
+        for i in range(n):
+            while 1 <= nums[i] <= n and nums[i] != nums[nums[i] - 1]:
+                # Swap nums[i] to its correct position (nums[i] - 1)
+                nums[nums[i] - 1], nums[i] = nums[i], nums[nums[i] - 1]
+
+        # Step 2: Find the First Missing Positive
+        for i in range(n):
+            if nums[i] != i + 1:
+                return i + 1
+        return n + 1
