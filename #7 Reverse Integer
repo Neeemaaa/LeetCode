@@ -19,3 +19,10 @@ class Solution:
                 return 0
         
         return reversed_x
+
+# Set integer limits and initialize reversed_x to 0.
+# Determine if x is negative and take its absolute value.
+# Loop through digits of x:
+# Add the last digit of x to reversed_x and check for overflow.
+# Remove the last digit of x.
+# If x was negative, make reversed_x negative and check for overflow.
