@@ -1,0 +1,3 @@
+#	For n number of stairs, how many ways can you climb?
+#	Base case of 0 or 1 steps, always return 1. We assign the value of 1 for variable previous and current. 
+#	For 2 steps or more (up to n+1 when the loop will end), we go through and add the previous value to the current value, then updating previous and temp accordingly.
