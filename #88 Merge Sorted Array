@@ -9,3 +9,9 @@ public:
         sort(nums1.begin(), nums1.end());
     }
 };
+
+# Initialize the iteration counters and starting index for the first array.
+# Check each element of the second array, one by one.
+# Append the current element of the second array to the end of the first array at the current position.
+# Update the index in the first array to move to the next position.
+# Sort the entire first array to ensure all elements are in ascending order.
