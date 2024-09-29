@@ -1,0 +1,5 @@
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        unique_nums = set(nums)
+        unique = 2*sum(unique_nums) - sum(nums)
+        return unique
