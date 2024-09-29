@@ -3,3 +3,7 @@ class Solution:
         unique_nums = set(nums)
         unique = 2*sum(unique_nums) - sum(nums)
         return unique
+
+#set(nums) takes out all duplicate numbers in the list
+#multiply the sum of the numbers by 2 and subtract the sum of the original list
+#unique should now contain the single number
