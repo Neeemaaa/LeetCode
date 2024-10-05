@@ -2,3 +2,7 @@ class Solution:
     def hammingWeight(self, n: int) -> int:
         binary_rep = bin(n).replace("0b", "")
         return binary_rep.count('1')
+
+#bin(n) converts the given number into its binary representation
+#replace takes out the 0b
+#count('1') counts the number of 1s in that variable.
