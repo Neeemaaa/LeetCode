@@ -6,3 +6,22 @@ class Solution:
 #bin(n) converts the given number into its binary representation
 #replace takes out the 0b
 #count('1') counts the number of 1s in that variable.
+
+#alternate solution below
+
+class Solution:
+        def hammingWeight(self, n: int) -> int:
+            if n == 0:
+                return "0"
+            
+            binary_rep = ""
+            while n > 0:
+                remainder = n % 2 
+                binary_rep = str(remainder) + binary_rep
+                n = n // 2
+            count = 0
+            while binary_rep:
+                if binary_rep & 1:
+                    count += 1
+                binary_rep = binary_rep >> 1 
+            return count
