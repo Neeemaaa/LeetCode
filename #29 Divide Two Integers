@@ -1,2 +1,8 @@
 Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator.
-for loop that subtracts or adds from the dividend 
+while loop that subtracts or adds from the dividend 
+
+given divisor and dividend:
+
+while divisor > 0
+  dividend -= divisor
+  
