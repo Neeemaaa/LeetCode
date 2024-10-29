@@ -2,7 +2,9 @@ Given two integers dividend and divisor, divide two integers without using multi
 while loop that subtracts or adds from the dividend 
 
 given divisor and dividend:
-
+int count = 0 
 while divisor > 0
   dividend -= divisor
-  
+  count++
+
+
