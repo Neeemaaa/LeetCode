@@ -1,8 +1,4 @@
-Created own account, no more premium
-you have two arrays with a linked list
-you want to add them together
-x1 + y1
-move to next list
-x2 + y2
-forgot
-Last minute n need vbj
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
