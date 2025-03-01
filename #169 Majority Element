@@ -16,4 +16,4 @@ class Solution:
                     majority = nums[i]
         return majority
 
-majority
+#majority
