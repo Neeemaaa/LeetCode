@@ -15,3 +15,5 @@ class Solution:
                     current_max = counter
                     majority = nums[i]
         return majority
+
+majority
