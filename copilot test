@@ -1,6 +1,6 @@
-### Problem: Merge Two Sorted Arrays
+#Problem: Merge Two Sorted Arrays
 
-#### Description:
+#Description:
 Given two sorted integer arrays `arr1` and `arr2`, merge them into a single sorted array.
 
 #### Example:
