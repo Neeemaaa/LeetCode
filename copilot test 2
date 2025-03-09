@@ -1,1 +1,1 @@
-test
+Write a function that takes a string as input and returns True if the string is a palindrome (reads the same forward and backward), and False otherwise.
