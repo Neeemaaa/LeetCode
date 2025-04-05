@@ -6,3 +6,5 @@ def is_palindrome(s: str) -> bool:
 
 this may be overkill for this function 
 i have hit gate time
+
+i havent made time for this
